@@ -4,7 +4,9 @@
 
 int main()
 {
-	GameFramework::runGame();
+	//GameFramework::runGame();
+	testReadFile("stageData.txt");
+	//testWriteFile("stageData.txt");
 	return 0;
 }
 
