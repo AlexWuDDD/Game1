@@ -151,13 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Flag.cpp" />
     <ClCompile Include="gameFramework.cpp" />
+    <ClCompile Include="IntArray2D.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Flag.h" />
     <ClInclude Include="gameFramework.h" />
     <ClInclude Include="gameStage.h" />
+    <ClInclude Include="IntArray2D.h" />
     <ClInclude Include="object.h" />
     <ClInclude Include="test.h" />
   </ItemGroup>

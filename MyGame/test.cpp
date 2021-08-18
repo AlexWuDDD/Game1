@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string.h>
+#include "Flag.h"
 
 void testKeyboardAndDisplay()
 {
@@ -35,4 +36,14 @@ void testWriteFile(const char* filePath)
 	std::ofstream outputFile("test.txt", std::ofstream::out);
 	outputFile << "alex is cool";
 	outputFile.close();
+}
+
+void testFlag()
+{
+	Flag flag1(255);
+	std::cout << std::boolalpha <<flag1.check(Flag_Postion::FLAG_GOAL) << std::endl;
+	Flag flag2(63);
+	std::cout << std::boolalpha <<flag2.check(Flag_Postion::FLAG_GOAL) << std::endl;
+	Flag flag3(65);
+	std::cout << std::boolalpha << flag3.check(Flag_Postion::FLAG_GOAL) << std::endl;
 }
